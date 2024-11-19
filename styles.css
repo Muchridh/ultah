@@ -7,14 +7,13 @@ body {
     background-image: linear-gradient(to right, #00c6ff, #0072ff);
     color: white;
     text-align: center;
-    overflow: hidden;
     margin: 0; /* Menghilangkan margin default */
 }
 
 .container {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    padding: 20px; /* Mengurangi padding untuk responsivitas */
+    padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
     backdrop-filter: blur(10px);
@@ -22,11 +21,19 @@ body {
     width: 100%; /* Memungkinkan kontainer untuk menyesuaikan */
 }
 
+.video-wrapper {
+    position: relative;
+    width: 100%; /* Memastikan wrapper video memenuhi lebar kontainer */
+    overflow: hidden; /* Menghindari overflow */
+    padding-top: 56.25%; /* Rasio aspek 16:9 */
+}
+
 video {
-    width: 100%; /* Mengatur lebar video agar sesuai dengan kontainer */
-    height: auto; /* Tinggi otomatis untuk menjaga rasio */
-    aspect-ratio: 9 / 16; /* Rasio potret 9:16 */
-    border-radius: 10px; /* Tambahkan sudut melingkar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Mengatur lebar video agar sesuai dengan wrapper */
+    height: 100%; /* Mengatur tinggi video agar sesuai dengan wrapper */
 }
 
 h1 {
