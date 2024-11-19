@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting">Selamat Ulang Tahun!</h1>
+        <div id="name-input">
+            <input type="text" id="nama" placeholder="Masukkan nama" required>
+            <button onclick="tampilkanUcapan()">Kirim</button>
+        </div>
+        <div id="birthday-message" style="display:none;">
+            <p id="message"></p>
+            <button id="video-button" onclick="goToVideo()">Tonton Video</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

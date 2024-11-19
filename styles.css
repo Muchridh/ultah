@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px; /* Mengurangi padding untuk responsivitas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    backdrop-filter: blur(10px);
+    max-width: 90%; /* Membuat kontainer responsif */
+    width: 100%; /* Memungkinkan kontainer untuk menyesuaikan */
+}
+
+video {
+    width: 100%; /* Mengatur lebar video agar sesuai dengan kontainer */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio */
+    aspect-ratio: 9 / 16; /* Rasio potret 9:16 */
+    border-radius: 10px; /* Tambahkan sudut melingkar */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em; /* Mengurangi ukuran font untuk responsivitas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0072ff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
